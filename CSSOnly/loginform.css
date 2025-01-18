@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background: rgba(113, 99, 186, 255);
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #f4f4f9;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-top: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Centered Form Styling */
+form {
+    background-color: #ffffff; /* White background for the form */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+p.center {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #f4f4f9;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #555;
+    font-weight: bold;
+}
+
+td input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Buttons */
+input[type="submit"], input[type="reset"] {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+input[type="reset"] {
+    background-color: #6c757d; /* Gray button */
+}
+
+input[type="reset"]:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Link Styling */
+a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.p{
+    color: #f4f4f9;
+}
+.b{
+    color: #f4f4f9;
+}

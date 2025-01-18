@@ -1,0 +1,314 @@
+/* Import Google Font cdn link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+h1, h2, h3, h4, h5, h6, p, strong, span, label{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:#001743;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.bold{
+    font-weight: bold;
+}
+#wrapper{
+    background-image: linear-gradient(to right, rgb(255, 255, 255), white);
+}
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+header.scrolled {
+    background-color: #000f28ea;
+    /*transition: background-color 200ms linear; */
+}
+.nav-bar { /* Make the navigation bar section to 1 line */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+nav ul { /* Disable the default radio lists, vertical, padding spaces between them and arrange to right */
+    list-style-type: none;
+    width: 100%;
+    padding: 10px;
+    text-align: right; /* Center the list items */              
+}
+nav ul li { /* Strengthen lists in one line */
+    display: inline-block; /* Display list items horizontally */
+    list-style: none;
+}
+nav ul li a { /* Design a clickable link before users drag the cursor onto them */
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover { /* Design when the cursor hits the link */
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+nav ul li a:active { /* Design when the cursor clicks the link */
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+ul li ul.dropdown li a {
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+ul li ul.dropdown li {
+    display: block;
+    color: white;
+}
+ul li ul.dropdown {
+    width: 90px;
+    background-color: #001743;
+    color: white;
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.logo { /* Logo of BOT - Boundless Online Tuiton */
+    height: 100px;
+    width: 190px;
+}
+.user-pic { /* User account */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid rgba(0, 98, 190, 0.742);
+}
+.user-pic:hover { /* User account */
+    border: 4px solid rgba(0, 73, 141, 0.742);
+}
+.user-pic:active { /* User account */
+    border: 4px solid rgba(0, 73, 141, 0.742);
+    transform: scale(0.9);
+}
+.tutor-user-pic { /* Tutor User account */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid rgb(0, 131, 35);
+}
+.tutor-user-pic:hover { /* Tutor User account */
+    border: 4px solid rgb(0, 77, 21);
+}
+.tutor-user-pic:active { /* Tutor User account */
+    border: 4px solid rgb(0, 77, 21);
+    transform: scale(0.9);
+}
+.note-container {
+    background-color: magenta;
+    padding: 2px 2px 2px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.X-button {
+    font-weight: bold;
+    font-size: 20px;
+    background-color:blue;
+    color: white;
+}
+.X-button:hover {
+    font-weight: bold;
+    font-size: 20px;
+    background-color:rgb(0, 0, 150);
+    color: white;
+}
+.X-button:active {
+    font-weight: bold;
+    font-size: 20px;
+    background-color:rgb(0, 0, 150);
+    color: white;
+    transform: scale(0.9);
+}
+.ads-container {
+    background-image: url("assets/promote1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+section{
+    float: right;
+    width: 75%;
+}
+section article{
+    margin-bottom: 2px;
+}
+article header h2{
+    padding: 2px;
+    color:black;
+}
+.center{
+    text-align: center;
+}
+.column img {
+    height: 400px;
+    width: 100%;
+    object-fit: auto;
+}
+.justify{
+    text-align: justify;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.imageCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    box-shadow: 2px 2px 5pc 8px rgb(0, 0, 0);
+}
+.rounded-button{
+    width: 200px;
+    padding: 13px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;                
+}
+footer {
+    clear: both;
+    background-color: #001743;
+    position: absolute;
+    color: white;
+}
+.bottom-content {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.about-us {
+    flex-basis: 25%;
+    padding: 10px;     
+}
+.about-us h3 {
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+.classes {
+    flex-basis: 25%;
+    padding: 20px; 
+}
+.classes h3 {
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+.social-media {
+    flex-basis: 25%;
+    padding: 10px;
+}
+.social-media h3 {
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+footer div div hr {
+    width: 30%;
+    margin-bottom: 10px;
+    margin-right: 240px;
+    size: auto;
+}
+footer div div a {
+    text-decoration: none;
+    color: white;
+}
+footer div div a p {
+    text-decoration: none;
+    color: white;
+}
+footer div div a:hover {
+    text-decoration: underline;
+    color: white;
+}
+footer div div a:active {
+    text-decoration: underline;
+    color: black;
+}
+footer div div a:visited {
+    text-decoration: none;
+    color: white;
+}
+.second-bottom-content {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+h6 a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: white;
+}
+h6 a:hover {
+    text-decoration: underline;
+    color: white;
+}
+h6 a:active {
+    text-decoration: underline;
+    color: black;
+}
+h6 a:visited {
+    text-decoration: none;
+    color: white;
+}
+.policy {
+    text-align: center;
+    display: flex;
+}
+.imageSize{
+    width: 50px;
+    height: 50px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 33.33%;
+    padding: 9px;
+}
+.image-container {
+    margin-bottom: 70px;
+    text-align: center; /* Center the image horizontally */
+}
+#regist {
+    margin-top: 360px;
+}
